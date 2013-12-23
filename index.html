@@ -1,38 +1,296 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+<html lang="en">
+<head>
+        <meta charset="utf-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <title>t{know}</title>
+        
+        <link href='http://fonts.googleapis.com/css?family=Luckiest+Guy' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/normalize.css" type="text/css">
+        <link rel="stylesheet" href="css/style.css" type="text/css">        
+</head>
+<body>
 
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+        
+        <div id="intro">
+                <h1 id="title">
+                        <span id="title-line1" class="title-line">tech</span>
+                        <span id="title-line2" class="title-line">{know}</span>
+                        <span id="title-line3" class="title-line">logy</span>
+                </h1>
+        </div>
 
-    <title>Root | tech{knowlogy} </title>
-  </head>
+        <div id="title-info">
+                <p id="desc">Simple, where the geeks in college hang out. </p>
+        </div>
 
-  <body>
 
-    <header>
-      <div class="container">
-        <h1>root</h1>
-        <h2>tech{know}logy club on the web. </h2>
+        <div id="showcase">
+                <h1>Showcase</h1>
+                <p>Some other places you can find us online.</p>
+                <div class="gallery clearfix">
+                        <figure>
+                                <a href="#">
+                                        <img src="gallery/blog.jpg" alt="t{know} blog">
+                                </a>
+                                <figcaption>blog<br />
+                                        <small><a href="#">event updates</a></small>
+                                </figcaption>
+                        </figure>
+                        <figure>
+                                <a href="#">
+                                        <img src="gallery/funnel.jpg" alt="t{know} funnel">
+                                </a>
+                                <figcaption>funnel<br />
+                                        <small><a href="#">talk proposals</a></small>
+                                </figcaption>
+                        </figure>
+                        <figure>
+                                <a href="#">
+                                        <img src="gallery/gallery.jpg" alt="t{know} gallery">
+                                </a>
+                                <figcaption>image gallery<br />
+                                        <small><a href="#">crazy moments</a></small>
+                                </figcaption>
+                        </figure>
+                </div>
+        </div>
 
-        <section id="downloads">
-          <a href="https://github.com/techknowlogy" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-        </section>
-      </div>
-    </header>
+        <div id="hire">
+                <h3>Space for calendar</h3>
+                <p>We'll set up a calendar with event details over here soon!</p>
+        </div>
 
-    <div class="container">
-      <section id="main_content">
-        <h1>
-<a name="techknowlogygithubio" class="anchor" href="#techknowlogygithubio"><span class="octicon octicon-link"></span></a>techknowlogy.github.io</h1>
+        <div id="content-wrapper">
 
-<p>tech{know}logy club on the web. </p>
-      </section>
-    </div>
+                <div id="examples-1">
+                        <h2 id="fade-it">Meet geeks</h2>
+                        <h2 id="fly-it">Hack</h2>
+                        <h2 id="spin-it">Brag</h2>
+                        <h2 id="scale-it">Speak</h2>
+                        <h2 id="smush-it">Grab cool swag</h2>
+                </div>
+                
+                <div id="examples-pin">
+ 
+                        <div id="pin-frame-slide" class="pin-frame"><h2>Informal tech sessions</h2></div>
+                        <div id="pin-frame-wipe" class="pin-frame"><h2>Crazy hack weekends</h2></div>
+                        <div id="pin-frame-bounce" class="pin-frame"><h2>Lazy evening walks</h2></div>
+                        <div id="pin-frame-color" class="pin-frame"><h2>Geek parties ;)</h2></div>
 
-    
-  </body>
-</html>
+                </div>
+                
+                <div id="examples-2">
+                        <h2 id="fling-it">Cool?</h2>
+                        <h2 id="move-it">Join us ;)</h2>
+                </div>
+                
+                <div id="examples-parallax">
+                        <h2 id="parallax-it">Merry Christmas!</h2>
+                        <h2 id="parallax-it-left">Merry Christmas!</h2>
+                        <h2 id="parallax-it-right">Merry Christmas!</h2>
+                </div>
+                
+                <h2 id="bring-it">Love, t{know}</h2>
+
+                <div id="howtouse">
+ 
+                        <div id="credits">
+                                <h1>{know} us</h1>
+                                <p>Christmas greetings from t{know} web and design. </a></p>
+                                <p>Definitely not tailored. Just a quick, kam-chalou hack ;)</p>
+                                <p>Follow us on <a href="http://twitter.com/WeAreTknow">Twitter</a>, or contribute to this page on <a href="#">GitHub</a>.<p>
+                        </div>
+
+
+                </div>
+        </div>
+        <script type="text/javascript" src="js/greensock/TweenMax.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+          <script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
+          <script src="js/jquery.lettering-0.6.1.min.js"></script>
+        <script src="js/jquery.superscrollorama.js"></script>
+        <script>
+                $(document).ready(function() {
+                        $('body').css('visibility','visible');
+
+                        // hide content until after title animation
+                        $('#content-wrapper').css('display','none');
+                        
+                        // lettering.js to split up letters for animation
+                        $('#title-line1').lettering();
+                        $('#title-line2').lettering();
+                        $('#title-line3').lettering();
+                        
+                        // TimelineLite for title animation, then start up superscrollorama when complete
+                        (new TimelineLite({onComplete:initScrollAnimations}))
+                                .from( $('#title-line1 span'), .4, {delay: 1, css:{right:'1000px'}, ease:Back.easeOut})
+                                .from( $('#title-line2'), .4, {css:{top:'1000px',opacity:'0'}, ease:Expo.easeOut})
+                                .append([
+                                        TweenMax.from( $('#title-line3 .char1'), .25+Math.random(), {css:{top: '-200px', right:'1000px'}, ease:Elastic.easeOut}),
+                                        TweenMax.from( $('#title-line3 .char2'), .25+Math.random(), {css:{top: '300px', right:'1000px'}, ease:Elastic.easeOut}),
+                                        TweenMax.from( $('#title-line3 .char3'), .25+Math.random(), {css:{top: '-400px', right:'1000px'}, ease:Elastic.easeOut}),
+                                        TweenMax.from( $('#title-line3 .char4'), .25+Math.random(), {css:{top: '-200px', left:'1000px'}, ease:Elastic.easeOut}),
+                                        TweenMax.from( $('#title-line3 .char5'), .25+Math.random(), {css:{top: '200px', left:'1000px'}, ease:Elastic.easeOut})
+                                ])
+                                .to( $('#title-info'), .5, {css:{opacity:.99, 'margin-top':0}, delay:-1, ease:Quad.easeOut});
+                        
+                        function initScrollAnimations() {
+                                $('#content-wrapper').css('display','block');
+                                var controller = $.superscrollorama();
+                        
+                                // title tweens
+                                $('.title-line span').each(function() {
+                                        controller.addTween(10, TweenMax.to(this, .5, {css:{top: Math.random()*-200-600, left: (Math.random()*1000)-500, rotation:Math.random()*720-360, 'font-size': Math.random()*300+150}, ease:Quad.easeOut}),200);
+                                });
+                                controller.addTween(10, TweenMax.to($('#title-line1'), .75, {css:{top: 600}, ease:Quad.easeOut}),200);
+                                controller.addTween(10, TweenMax.to($('#title-line2'), .75, {css:{top: 200}, ease:Quad.easeOut}),200);
+                                controller.addTween(10, TweenMax.to($('#title-line3'), .75, {css:{top: -100}, ease:Quad.easeOut},200));
+
+                                // showcase tweens
+                                controller.addTween('#showcase h1', TweenMax.from( $('#showcase h1'), .75, {css:{letterSpacing:20,opacity:0}, ease:Quad.easeOut}));
+                                controller.addTween('#showcase p', TweenMax.from( $('#showcase p'), 1, {css:{opacity:0}, ease:Quad.easeOut}));
+                                $('#showcase .gallery figure').css('position','relative').each(function() {
+                                        controller.addTween('#showcase .gallery', TweenMax.from( $(this), 1, {delay:Math.random()*.2,css:{left:Math.random()*200-100,top:Math.random()*200-100,opacity:0}, ease:Back.easeOut}));
+                                });
+
+                                // hire tweens
+                                $('#hire h3').lettering().find('span').css('position','relative').each(function() {
+                                        controller.addTween('#hire h3', TweenMax.from( $(this), .25, {delay:Math.random()*.2,css:{left:Math.random()*1200-600,top:Math.random()*600-300,opacity:0}, ease:Expo.easeOut}),200);
+                                });
+                                controller.addTween('#hire p', TweenMax.from( $('#hire p'), .5, {css:{opacity:0}}));
+                                
+                                // individual element tween examples
+                                controller.addTween('#fade-it', TweenMax.from( $('#fade-it'), .5, {css:{opacity: 0}}));
+                                controller.addTween('#fly-it', TweenMax.from( $('#fly-it'), .25, {css:{right:'1000px'}, ease:Quad.easeInOut}));
+                                controller.addTween('#spin-it', TweenMax.from( $('#spin-it'), .25, {css:{opacity:0, rotation: 720}, ease:Quad.easeOut}));
+                                controller.addTween('#scale-it', TweenMax.fromTo( $('#scale-it'), .25, {css:{opacity:0, fontSize:'20px'}, immediateRender:true, ease:Quad.easeInOut}, {css:{opacity:1, fontSize:'240px'}, ease:Quad.easeInOut}));
+                                controller.addTween('#smush-it', TweenMax.fromTo( $('#smush-it'), .25, {css:{opacity:0, 'letter-spacing':'30px'}, immediateRender:true, ease:Quad.easeInOut}, {css:{opacity:1, 'letter-spacing':'-10px'}, ease:Quad.easeInOut}), 0, 100); // 100 px offset for better timing
+                                
+                                // set duration, in pixels scrolled, for pinned element
+                                var pinDur = 4000;
+                                // create animation timeline for pinned element
+                                var pinAnimations = new TimelineLite();
+                                pinAnimations
+                                        .append(TweenMax.from($('#pin-frame-pin h2'), .5, {css:{marginTop:0}, ease: Quad.easeInOut}))
+                                        .append([
+                                                TweenMax.to($('#pin-frame-slide'), 1, {css:{marginLeft:0}}),
+                                                TweenMax.to($('#pin-frame-pin'), 1, {css:{marginLeft:'100%'}})
+                                        ], .5)
+                                        .append([
+                                                TweenMax.to($('#pin-frame-wipe'), .5, {css:{top:0}}),
+                                                TweenMax.from($('#pin-frame-wipe h2'), .5, {css:{marginTop:'-600px'}})
+                                        ], .5)
+                                        .append(TweenMax.from($('#pin-frame-bounce'), 5, {css:{marginTop:'-100%'}, ease:Bounce.easeOut}), .5)
+                                        .append(TweenMax.from($('#pin-frame-color'), .25, {css:{opacity:0}}), .5)
+                                        .append([
+                                                TweenMax.to($('#pin-frame-color'), .25, {css:{backgroundColor:'blue'}}),
+                                                TweenMax.to($('#pin-frame-color h2'), .25, {css:{color:'orange'}})
+                                        ])
+                                        .append([
+                                                TweenMax.to($('#pin-frame-color'), .25, {css:{backgroundColor:'green'}}),
+                                                TweenMax.to($('#pin-frame-color h2'), .25, {css:{color:'red'}})
+                                        ])
+                                        .append([
+                                                TweenMax.to($('#pin-frame-color'), .25, {css:{backgroundColor:'yellow'}}),
+                                                TweenMax.to($('#pin-frame-color h2'), .25, {css:{color:'purple'}})
+                                        ])
+                                        .append([
+                                                TweenMax.to($('#pin-frame-color'), .25, {css:{backgroundColor:'orange'}}),
+                                                TweenMax.to($('#pin-frame-color h2'), .25, {css:{color:'blue'}})
+                                        ])
+                                        .append([
+                                                TweenMax.to($('#pin-frame-color'), .25, {css:{backgroundColor:'red'}}),
+                                                TweenMax.to($('#pin-frame-color h2'), .25, {css:{color:'green'}})
+                                        ])
+                                        .append([
+                                                TweenMax.to($('#pin-frame-color'), .25, {css:{backgroundColor:'#222438'}}),
+                                                TweenMax.to($('#pin-frame-color h2'), .25, {css:{color:'#FFB000'}})
+                                        ])
+                                        .append(TweenMax.to($('#pin-frame-unpin'), .5, {css:{top:'100px'}}));
+                                
+                                // pin element, use onPin and onUnpin to adjust the height of the element
+                                controller.pin($('#examples-pin'), pinDur, {
+                                        anim:pinAnimations, 
+                                        onPin: function() {
+                                                $('#examples-pin').css('height','100%');
+                                        }, 
+                                        onUnpin: function() {
+                                                $('#examples-pin').css('height','600px');
+                                        }
+                                });
+                                controller.pin($('#examples-2'), 3000, {
+                                        anim: (new TimelineLite())
+                                                .append(
+                                                        TweenMax.fromTo($('#fling-it'), 2, 
+                                                                {css:{left:-1000, top: 500, rotation: -360}, immediateRender:true}, 
+                                                                {css:{left:2000, top: -600, rotation: 360}})
+                                                )
+                                                .append(
+                                                        TweenMax.fromTo($('#move-it'), .75, 
+                                                                {css:{left: -200, top: 800}, immediateRender:true}, 
+                                                                {css:{top: -200}}),
+                                                                -1.5 // offset for better timing
+                                                )
+                                                .append(
+                                                        TweenMax.to($('#move-it'), .5, 
+                                                                {css:{left: 200}})
+                                                )
+                                                .append(
+                                                        TweenMax.to($('#move-it'), .5, 
+                                                                {css:{top: 0}})
+                                                )
+                                                .append(
+                                                        TweenMax.to($('#move-it'), .5, 
+                                                                {css:{left: 0}})
+                                                )
+                                })
+
+                                // parallax example, setting duration ties animation to scroll position
+                                // you can target a scroll position instead of an element (whose position can change)
+                                controller.addTween(
+                                        '#examples-parallax',
+                                        (new TimelineLite())
+                                                .append([
+                                                        TweenMax.fromTo($('#parallax-it-left'), 1, 
+                                                                {css:{top: 200}, immediateRender:true}, 
+                                                                {css:{top: -600}}),
+                                                        TweenMax.fromTo($('#parallax-it-right'), 1, 
+                                                                {css:{top: 500}, immediateRender:true}, 
+                                                                {css:{top: -1250}})
+                                                ]),
+                                        1000 // scroll duration of tween
+                                );
+
+                                $('#bring-it').lettering();
+                                controller.addTween(
+                                        '#bring-it',
+                                        (new TimelineLite())
+                                                .append([
+                                                        TweenMax.from($('#bring-it .char1'), 1, 
+                                                                {css:{fontSize: 0}, immediateRender:true, ease:Elastic.easeOut}),
+                                                        TweenMax.from($('#bring-it .char2'), .6, 
+                                                                {css:{fontSize: 0}, immediateRender:true, ease:Elastic.easeOut}),
+                                                        TweenMax.from($('#bring-it .char3'), 1.1, 
+                                                                {css:{fontSize: 0}, immediateRender:true, ease:Elastic.easeOut}),
+                                                        TweenMax.from($('#bring-it .char4'), .7, 
+                                                                {css:{fontSize: 0}, immediateRender:true, ease:Elastic.easeOut}),
+                                                        TweenMax.from($('#bring-it .char5'), .9, 
+                                                                {css:{fontSize: 0}, immediateRender:true, ease:Elastic.easeOut}),
+                                                        TweenMax.from($('#bring-it .char6'), 1.2, 
+                                                                {css:{fontSize: 0}, immediateRender:true, ease:Elastic.easeOut}),
+                                                        TweenMax.from($('#bring-it .char7'), .6, 
+                                                                {css:{fontSize: 0}, immediateRender:true, ease:Elastic.easeOut}),
+                                                        TweenMax.from($('#bring-it .char8'), .8, 
+                                                                {css:{fontSize: 0}, immediateRender:true, ease:Elastic.easeOut})
+                                                ])
+                                                ,
+                                        1200,
+                                        -100 // offset for better timing
+                                );
+
+                        }
+                });
+        </script>
+
+</body></html>
