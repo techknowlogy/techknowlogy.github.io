@@ -60,6 +60,24 @@ h3 {
 
 p {	width: 80%; margin: 20px auto; text-shadow: 0 2px 1px #000; color: #C5C3DE; }
 a, a:visited { color: #D92B00; font-weight: bold; font-style: italic; }
+
+.sp-wrap i:first-child {
+    color: rgb(0, 0, 0);
+}
+.sp-wrap i {
+    position: absolute;
+    background: none repeat scroll 0% 0% rgb(255, 221, 0);
+        background-color: rgb(255, 221, 0);
+        background-image: none;
+        background-repeat: repeat;
+        background-attachment: scroll;
+        background-position: 0% 0%;
+        background-clip: border-box;
+        background-origin: padding-box;
+        background-size: auto auto;
+    width: 60px;
+}
+
 ul { list-style: none; }
 
 figcaption { text-shadow: 0 2px 1px #000; color: #C5C3DE; }
